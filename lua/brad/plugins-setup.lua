@@ -25,7 +25,7 @@ end
 
 return packer.startup(function(use)
     use("wbthomason/packer.nvim")
-    use("shaunsingh/nord.nvim")
+    use("morhetz/gruvbox")
     use("xiyaowong/transparent.nvim")
     -- lua functions that many plugins use
     use("nvim-lua/plenary.nvim")
