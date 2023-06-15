@@ -64,6 +64,7 @@ return packer.startup(function(use)
     use("onsails/lspkind.nvim")
     use("m4xshen/autoclose.nvim")
     use("rust-lang/rust.vim")
+    use("arnamak/stay-centered.nvim")
     if packer_bootstrap then
         require("packer").sync()
     end
