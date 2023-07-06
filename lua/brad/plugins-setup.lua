@@ -65,6 +65,9 @@ return packer.startup(function(use)
     use("m4xshen/autoclose.nvim")
     use("rust-lang/rust.vim")
     use("arnamak/stay-centered.nvim")
+    -- formatting & linting
+    use("jose-elias-alvarez/null-ls.nvim")
+    use("jayp0521/mason-null-ls.nvim")
     if packer_bootstrap then
         require("packer").sync()
     end
