@@ -24,6 +24,11 @@ opt.cursorline = true
 opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
+vim.api.nvim_command([[
+    augroup ChangeBackgroudColour
+        autocmd colorscheme * :hi normal guibg=NONE
+    augroup END
+]])
 
 -- backspace
 opt.backspace = "indent,eol,start"
