@@ -6,7 +6,7 @@ local keymap = vim.keymap -- for conciseness
 keymap.set("i", "jk", "<ESC>")
 
 --general keymaps
-keymap.set("n", "<leader>nh", ":nohl<CR>") -- space + n + h clears search 
+keymap.set("n", "<leader>nh", ":nohl<CR>") -- space + n + h clears search
 keymap.set("n", "x", '"_x') -- x doesn't copy when clearing
 keymap.set("n", "<leader>+", "<C-a>") -- space + "+" increments a number
 keymap.set("n", "<leader>-", "<C-x>") -- space + "-" decrements a number
@@ -38,3 +38,8 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find text in cu
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find current string the cursor is on throughout the project
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- show current buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- show help tags
+
+-- diagnostics
+keymap.set("n", "<leader>dd", "<cmd> lua vim.diagnostic.open_float() <CR>") -- show diagnostic data
+keymap.set("n", "<leader>dn", "<cmd> lua vim.diagnostic.goto_next() <CR>") -- show next diagnostic
+keymap.set("n", "<leader>dp", "<cmd> lua vim.diagnostic.goto_prev() <CR>") -- show previous diagnostic
