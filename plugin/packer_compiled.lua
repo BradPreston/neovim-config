@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/home/bradpreston/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ripgrep = {
+    loaded = true,
+    path = "/home/bradpreston/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
+  },
   ["rust.vim"] = {
     loaded = true,
     path = "/home/bradpreston/.local/share/nvim/site/pack/packer/start/rust.vim",
