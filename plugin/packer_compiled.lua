@@ -114,6 +114,16 @@ _G.packer_plugins = {
     path = "/home/brad/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["conform.nvim"] = {
+    loaded = true,
+    path = "/home/brad/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
+  ["elixir.nvim"] = {
+    loaded = true,
+    path = "/home/brad/.local/share/nvim/site/pack/packer/start/elixir.nvim",
+    url = "https://github.com/mhanberg/elixir.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/brad/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -178,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/brad/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/brad/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

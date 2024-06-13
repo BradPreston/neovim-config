@@ -28,6 +28,7 @@ return packer.startup(function(use)
 	use("morhetz/gruvbox")
 	use("shaunsingh/nord.nvim")
 	use("xiyaowong/transparent.nvim")
+	use({ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" })
 	-- lua functions that many plugins use
 	use("nvim-lua/plenary.nvim")
 	-- tmux & split window navigation
@@ -69,6 +70,8 @@ return packer.startup(function(use)
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
+	use("mhanberg/elixir.nvim")
+	use("stevearc/conform.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
